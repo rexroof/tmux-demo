@@ -2,11 +2,13 @@
 
 # this is a simple script that splits your screen into 3 panes on the side
 
+# record current pane
+original_pane=$(tmux display -p '#{pane_id}')
+
 # commands we want to run
 cmd_one="watch kubectl get pods"
 cmd_two="ctop"
 cmd_three="docker run -it --rm --pid=host --name htop terencewestphal/htop"
-
 
 # split full window horizonally, run cmd one
 tmux split-window -f -h $cmd_one
@@ -20,3 +22,6 @@ thirds=$(( $full_height / 3 ))
 tmux split-window -l $thirds -v -t $pane_id $cmd_three
 # (again)  split new pane into a new window 1/3rd of the original size and run command
 tmux split-window -l $thirds -v -t $pane_id $cmd_two
+
+# switch back to original pane
+tmux select-pane -t $original_pane 

@@ -10,6 +10,9 @@ cmds+=("ctop")
 cmds+=("cmatrix")
 cmds+=("docker run -it --rm --pid=host --name htop terencewestphal/htop")
 
+# record current pane
+original_pane=$(tmux display -p '#{pane_id}')
+
 # count how many commands we have
 number_cmds=${#cmds[@]}
 # while there are still commands to run
@@ -32,3 +35,6 @@ while [ -n "${cmds[0]}" ] ; do
   # pop command out of array
   cmds=("${cmds[@]:1}")
 done
+
+# switch back to original pane
+tmux select-pane -t $original_pane 
