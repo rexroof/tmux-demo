@@ -16,21 +16,34 @@ originally released in 1987, it is the OG.
 - <https://www.gnu.org/software/screen/>
 
 ## tmux
-originally released 20 years after screen in 2007.
+first released 20 years after screen in 2007.
 
 - <https://en.wikipedia.org/wiki/Tmux>
 - <https://github.com/tmux/tmux>
 
+## scripting demos
+these demos are meant to show off how scriptable tmux is.
 
-## demos
+### detached process script
+this script sets up a detached tmux session with a while loop running in it.
 
-### 
+- [detached.sh](/detached.sh)
 
+### k8s demo
+these scripts set up an example environment for running kubernetes commands against a cluster
+
+- [k8s.sh](/k8s.sh)
+- [k8s2.sh](/k8s2.sh)
+
+### multissh script
+script for connecting to multiple hosts and running commands on them
+
+- [multi-ssh.sh](/multi-ssh.sh)
 
 ## more tmux links
 
 - <https://github.com/gpakosz/.tmux> : opinionated tmux config
-
+- <http://hyperpolyglot.org/multiplexers> : tmux/screen CLI comparison
 
 ## MacOS utilities I used
 
