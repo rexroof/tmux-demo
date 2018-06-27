@@ -51,6 +51,7 @@ script for connecting to multiple hosts and running commands on them
 
 ## more tmux links
 
+- <https://gist.github.com/andreyvit/2921703> : tmux cheatsheet/quickstart
 - <https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340> : tmux, a gentle introduction
 - <http://hyperpolyglot.org/multiplexers> : tmux/screen CLI comparison
 - <https://github.com/gpakosz/.tmux> : opinionated tmux config
