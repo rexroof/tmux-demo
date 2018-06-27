@@ -21,6 +21,15 @@ first released 20 years after screen in 2007.
 - <https://en.wikipedia.org/wiki/Tmux>
 - <https://github.com/tmux/tmux>
 
+## simple tmux primer
+
+- windows
+- panes
+- detaching
+- copy & paste
+- multi-window examples
+- my [muxer](/muxer) autostart script
+
 ## scripting demos
 these demos are meant to show off how scriptable tmux is.
 
@@ -42,13 +51,12 @@ script for connecting to multiple hosts and running commands on them
 
 ## more tmux links
 
-- <https://github.com/gpakosz/.tmux> : opinionated tmux config
+- <https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340> : tmux, a gentle introduction
 - <http://hyperpolyglot.org/multiplexers> : tmux/screen CLI comparison
+- <https://github.com/gpakosz/.tmux> : opinionated tmux config
 
 ## MacOS utilities I used
 
 - [iTerm2](https://www.iterm2.com/)
 - [Spectacle App](https://www.spectacleapp.com/)
 - [KeyCastr](https://github.com/keycastr/keycastr)
-
-
